@@ -1,9 +1,10 @@
 import styled from "@emotion/styled";
 export const List = styled.ul`
   list-style: none;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  display: grid;
+  max-width: calc(100vw - 48px);
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  grid-gap: 16px;
   padding: 0;
   margin: 0;
 `;
@@ -20,4 +21,6 @@ export const Button = styled.button`
   background-color: transparent;
   font-size: inherit;
   color: inherit;
+  color: whitesmoke;
+  border-radius: 8px;
 `;

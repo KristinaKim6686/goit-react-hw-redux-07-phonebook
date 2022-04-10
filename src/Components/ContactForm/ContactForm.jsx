@@ -6,6 +6,7 @@ import {
   useGetContactsQuery,
   useAddContactMutation,
 } from "../../redux/phonebookSlice";
+
 function ContactForm() {
   const [name, setName] = useState("");
   const [number, setNumber] = useState("");
